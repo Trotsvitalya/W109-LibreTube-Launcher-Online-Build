@@ -24,7 +24,7 @@ gradle assembleDebug
 ## Встановлення через ADB
 Після збірки:
 ```powershell
-.db.exe install -r app-debug.apk
+.\adb.exe install -r app-debug.apk
 ```
 
 Потім натисни Home на планшеті й вибери **Player Home**. Якщо система запропонує вибір постійного домашнього застосунку, вибери Player Home.
@@ -33,7 +33,7 @@ gradle assembleDebug
 Не вимикай `com.android.launcher3` до перевірки нового лаунчера.
 Щоб повернути старий лаунчер, вибери його в системних налаштуваннях домашнього застосунку або видали Player Home:
 ```powershell
-.db.exe uninstall com.w109.playerhome
+.\adb.exe uninstall com.w109.playerhome
 ```
 
 ## Примітки
